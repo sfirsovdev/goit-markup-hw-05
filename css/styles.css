@@ -95,6 +95,8 @@ ul {
   margin-top: 24px;
   margin-bottom: 25px;
   display: block;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 .page-header-color-logo:hover {
@@ -146,6 +148,8 @@ ul {
 .site-nav .link {
   color: var(--second-text-color);
   text-decoration: none;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -194,6 +198,11 @@ ul {
 .item-phone {
   display: flex;
   text-align: center;
+}
+
+.contact-item {
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 /* Hero------------------------------------ */
@@ -326,7 +335,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
-  color: #fff;
+  color: var(--text-color);
 }
 
 /* Наша команда -----------------------------*/
@@ -453,6 +462,8 @@ ul {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -509,6 +520,8 @@ ul {
   color: var(--text-color);
   text-decoration: none;
   cursor: default;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 .page-footer-color-logo:hover {
@@ -534,15 +547,12 @@ ul {
   color: var(--text-color);
   text-decoration: none;
   cursor: default;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 .title-adress:hover,
 .title-adress:focus {
-  color: var(--accent-text-color);
-}
-
-.title-adress-tel:hover,
-.title-adress-tel:focus {
   color: var(--accent-text-color);
 }
 
@@ -556,6 +566,14 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   cursor: default;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
+}
+
+.title-adress-post:hover {
+  color: var(--accent-text-color);
+  text-decoration: none;
+  opacity: 0.6;
 }
 
 .title-adress-tel {
@@ -568,12 +586,13 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   cursor: default;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
-.title-adress-post:hover {
+.title-adress-tel:hover,
+.title-adress-tel:focus {
   color: var(--accent-text-color);
-  text-decoration: none;
-  opacity: 0.6;
 }
 
 /* Присоединяйтесь--------------- */
