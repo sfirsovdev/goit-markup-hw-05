@@ -466,7 +466,12 @@ ul {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-  transition: color 300ms linear;
+  transition: color 300ms linear, border-color 300ms;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
+}
+
+.clients-link-icon {
+  transition: fill 300ms linear, border-color 300ms;
   transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
