@@ -261,7 +261,7 @@ ul {
   background-color: var(--accent-text-color);
   color: var(--text-color);
   letter-spacing: 0.06em;
-  transition: color 300ms linear, background-color 300ms linear;
+  transition: color 250ms linear, background-color 300ms linear;
   transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
@@ -425,7 +425,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 300ms linear, background-color 300ms linear;
+  transition: color 250ms linear, background-color 300ms linear;
   transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
@@ -709,7 +709,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  transition: color 300ms linear, background-color 300ms linear;
+  transition: color 250ms linear, background-color 300ms linear;
   transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
@@ -747,11 +747,36 @@ ul {
   flex-wrap: wrap;
 }
 
+.portfolio-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: 250ms;
+  overflow: auto;
+}
+
 .cards-item {
   margin-right: 30px;
   margin-bottom: 30px;
   transition: box-shadow 250ms;
   transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
+}
+
+.cards-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards-item:hover .portfolio-text {
+  transform: translateY(0);
 }
 
 .cards-item img {
