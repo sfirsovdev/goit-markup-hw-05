@@ -145,7 +145,7 @@ ul {
   border-radius: 2px;
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -33px;
   pointer-events: none;
 }
 
@@ -479,12 +479,12 @@ ul {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-  transition: color 300ms linear, border-color 300ms;
+  transition: color 250ms linear, border-color 300ms;
   transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 .clients-link-icon {
-  transition: fill 300ms linear, border-color 300ms;
+  transition: fill 250ms linear, border-color 300ms;
   transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
@@ -669,6 +669,7 @@ ul {
   top: 0;
   left: 0;
   transition: opacity 250ms, visibility 250ms;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -809,6 +810,7 @@ ul {
   padding: 63px 24px;
   transform: translateY(100%);
   transition: 250ms;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 .cards-item {
