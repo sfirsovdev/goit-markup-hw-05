@@ -721,6 +721,14 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.link-our-product {
+  text-decoration: none;
+}
+
+.link-our-product:focus .portfolio-text {
+  transform: translateY(0);
+}
+
 .portfolio-name {
   font-weight: 700;
   font-size: 18px;
@@ -760,7 +768,6 @@ ul {
   padding: 63px 24px;
   transform: translateY(100%);
   transition: 250ms;
-  overflow: auto;
 }
 
 .cards-item {
