@@ -137,6 +137,18 @@ ul {
   text-decoration: none;
 }
 
+.active::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-text-color);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  pointer-events: none;
+}
+
 .site-nav .item {
   margin-top: 32px;
 }
@@ -160,6 +172,7 @@ ul {
 .link-current {
   display: block;
   text-decoration: none;
+  position: relative;
 }
 
 .link {
@@ -696,6 +709,8 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  transition: color 300ms linear, background-color 300ms linear;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 .button-portfolio:hover,
@@ -735,6 +750,8 @@ ul {
 .cards-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(5.4, 0, 0.2, 1);
 }
 
 .cards-item img {
