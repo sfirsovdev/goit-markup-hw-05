@@ -661,6 +661,47 @@ ul {
   fill: var(--section-color);
 }
 
+.backdrop {
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(23, 26, 36, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 250ms, visibility 250ms;
+}
+
+.modal {
+  width: 500px;
+  min-height: 500px;
+  background-color: var(--text-color);
+  border-radius: 5px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #2196f3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* CSS Porfolio ----------------------------*/
 
 /* Body---------------------------------  */
