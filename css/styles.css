@@ -369,6 +369,8 @@ ul {
 .section-name {
   margin-bottom: 10px;
   font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 
